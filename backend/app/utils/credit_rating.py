@@ -66,9 +66,9 @@ def calculate_credit_rating(mortgage: schemas.MortgageCreate, avg_credit_score: 
         risk_score += 1
     
     # Final Credit Rating
-    if risk_score <= 2:
+    if risk_score <= 1:
         return "AAA"  # Highly secure
-    elif 3 <= risk_score <= 5:
+    elif 2 <= risk_score <= 4:
         return "BBB"  # Medium risk
     else:
         return "C"    # Highly speculative or distressed 
